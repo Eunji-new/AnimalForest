@@ -1,0 +1,38 @@
+newmtl 줄무늬 광택 용지
+illum 7
+Kd 0 0 0
+adobe_interior_color 1 1 1
+Ni 1.6
+adobe_density 0
+Tr 0
+d 1
+Ka 0 0 0
+Ke 0 0 0
+map_Pm fishing/줄무늬 광택 용지_metallic.png
+adobe_translucence 0
+map_Pr fishing/줄무늬 광택 용지_roughness.png
+Ns 16
+Ks 1 1 1
+adobe_glow 0
+map_Kd fishing/줄무늬 광택 용지_baseColor.png
+norm fishing/줄무늬 광택 용지_normal.psd
+
+newmtl 스크래치된 콘크리트
+illum 7
+Kd 0 0 0
+adobe_interior_color 1 1 1
+Ni 1.6
+adobe_density 0
+Tr 0
+d 1
+Ka 0 0 0
+Ke 0 0 0
+map_Pm fishing/스크래치된 콘크리트_metallic.png
+adobe_translucence 0
+map_Pr fishing/스크래치된 콘크리트_roughness.png
+Ns 16
+Ks 1 1 1
+adobe_glow 0
+map_Kd fishing/스크래치된 콘크리트_baseColor.png
+norm fishing/스크래치된 콘크리트_normal.psd
+disp fishing/스크래치된 콘크리트_height.psd
