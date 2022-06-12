@@ -1,9 +1,9 @@
 # 모여봐요 동물의 숲 1인칭 버전 프로젝트
 
 <b> 프로젝트 영상</b> (조회수 6.8천회 달성)
-```
+
 https://youtu.be/EWQIVgK4t3A
-```
+
 <hr>
 
 ## 🎈 Introduction
