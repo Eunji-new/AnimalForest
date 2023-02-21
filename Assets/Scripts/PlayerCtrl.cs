@@ -28,19 +28,23 @@ public class PlayerCtrl : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.F))
         {
             if (isFishing) //이미 낚시 중에는 추가 낚시 불가
+                return;
+
+            if(!isNearRiver)
             {
+                UICtrl._Instance.CreateNotice("강에 더 가까이 다가가주세요.");
                 return;
             }
+
             Collider[] hitcolliders = Physics.OverlapSphere(transform.position, 5.0f);
+
             foreach(Collider coll in hitcolliders)
             {
-                //Debug.Log(coll.gameObject.name);
                 if (coll.gameObject.tag == "RIVER")
                 {
                     isFishing = true;
-                    Debug.Log("낚시");
-                    fishing.SetActive(true);
                     isNearRiver = true;
+                    fishing.SetActive(true);
                     break;
                 }
                 else
@@ -49,15 +53,9 @@ public class PlayerCtrl : MonoBehaviour
                 }
                 
             }
-            if (isFishing)
-            {
-                //3초 후에 물고기 낚음.
+
+            if (isFishing) //3초 후에 물고기 낚음.
                 StartCoroutine(Fishing());
-            }
-            if(!isNearRiver)
-            {
-                UICtrl._Instance.CreateNotice("강에 더 가까이 다가가주세요.");
-            }
         }
     }
 
