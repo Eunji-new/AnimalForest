@@ -32,21 +32,15 @@ public class SongPanelCtrl : MonoBehaviour
         PlayerCtrl._Instance.audioSrc.Play();
         isListening = false;
     }
-    public void StartSong1()
+
+    public void SetSong(AudioClip song)
     {
-        PlayerCtrl._Instance.audioSrc.clip = Songs[0];
-        PlayerCtrl._Instance.audioSrc.Play();
-        isListening = true;
+        PlayerCtrl._Instance.audioSrc.clip = song;
     }
-    public void StartSong2()
+
+    public void StartSing(AudioClip song)
     {
-        PlayerCtrl._Instance.audioSrc.clip = Songs[1];
-        PlayerCtrl._Instance.audioSrc.Play();
-        isListening = true;
-    }
-    public void StartSong3()
-    {
-        PlayerCtrl._Instance.audioSrc.clip = Songs[2];
+        SetSong(song);
         PlayerCtrl._Instance.audioSrc.Play();
         isListening = true;
     }
